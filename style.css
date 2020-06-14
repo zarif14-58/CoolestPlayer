@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .pics{
@@ -28,4 +29,39 @@
     height: 150px;
 }
 
+#info{
+    margin-top: 20px;
+    text-align: center;
+}
 
+#control{
+    margin-top: 60px;
+    text-align: center;   
+}
+
+.fa {
+    color: #ff00ff;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+#pause{
+    display: none;
+}
+
+#bar{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#progress{
+    border-radius: 25px;
+}
+
+#time{
+    text-align: center;
+}
+
+#current-time{
+    margin-right: 400px;
+}

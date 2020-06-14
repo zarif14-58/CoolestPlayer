@@ -6,15 +6,35 @@
         <title>CoolestPlayer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="updateBar()">
         <div id="pcs">
             <img src="smlts.jpg" class="pics nir" id="nirvana" onclick="activeOne()">     
             <img src="anmone2.jpg" class="pics arth" id="rafa" onclick="activeTwo()">   
             <img src="wdta.jpg" class="pics put" id="puth" onclick="activeThree()">   
         </div>
+
+        <div id="info">
+            <h4 id="title">Anmone 2</h4>
+            <h5 id="artist">Aurthohin</h5>
+        </div>
         
+        <div id="control">
+            <i class="fa fa-play-circle" aria-hidden="true" id="play" onclick="playOne()"></i>
+            <i class="fa fa-pause-circle" aria-hidden="true" id="pause" onclick="pauseOne()"></i>
+        </div>
+
+        <div id="bar">
+            <canvas id="progress" width="500" height="20"></canvas>
+            <audio id="audio" ontimeupdate="updateBar()" src="anmone2.mp3"></audio>
+        </div>
+        <div id="time">
+            <span id="current-time"></span>
+            <span id="duration"></span>
+        </div>
         
         <script src="app.js"></script>
     </body>
