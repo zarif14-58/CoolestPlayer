@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.pics{
+    cursor: pointer;
+}
+
+#pcs{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.arth{
+    width: 200px;
+    height: 200px;
+}
+
+.nir, .put{
+    width: 150px;
+    height: 150px;
+}
+
+
