@@ -134,3 +134,30 @@ function updateBar() {
         var minutes = Math.floor(inputSeconds / 60)
         return minutes + ":" + seconds
       }
+
+function prevOne(){
+        activeOne()
+        document.getElementById("prevOne").style.display = "none"
+        document.getElementById("prevTwo").style.display = "block"
+}
+
+function prevTwo(){
+        activeTwo()
+        document.getElementById("prevTwo").style.display = "none"
+        document.getElementById("prevOne").style.display = "block"
+}
+
+function nextOne(){
+        activeThree()
+        document.getElementById("nextOne").style.display = "none"
+        document.getElementById("nextTwo").style.display = "block"
+}
+
+function nextTwo(){
+        activeTwo()
+        document.getElementById("nextOne").style.display = "block"
+        document.getElementById("nextTwo").style.display = "none"
+}
+
+      
+      

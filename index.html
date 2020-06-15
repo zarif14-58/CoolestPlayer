@@ -10,7 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="updateBar()">
+    <body onload="updateBar()" on>
+        <div id="overlay"></div>
+
         <div id="pcs">
             <img src="smlts.jpg" class="pics nir" id="nirvana" onclick="activeOne()">     
             <img src="anmone2.jpg" class="pics arth" id="rafa" onclick="activeTwo()">   
@@ -23,8 +25,14 @@
         </div>
         
         <div id="control">
+            <i class="fa fa-step-backward" aria-hidden="true" onclick="prevOne()" id="prevOne"></i>
+            <i class="fa fa-step-backward" aria-hidden="true" onclick="prevTwo()" id="prevTwo"></i>
+            
             <i class="fa fa-play-circle" aria-hidden="true" id="play" onclick="playOne()"></i>
             <i class="fa fa-pause-circle" aria-hidden="true" id="pause" onclick="pauseOne()"></i>
+
+            <i class="fa fa-step-forward" aria-hidden="true" onclick="nextOne()" id="nextOne"></i>
+            <i class="fa fa-step-forward" aria-hidden="true" onclick="nextTwo()" id="nextTwo"></i>
         </div>
 
         <div id="bar">
@@ -35,6 +43,10 @@
             <span id="current-time"></span>
             <span id="duration"></span>
         </div>
+
+        <footer>
+            <p id="msg">I Do Not Own These Songs. All Rights Reserved To The Artists.</p>
+        </footer>
         
         <script src="app.js"></script>
     </body>
